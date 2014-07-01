@@ -1,5 +1,5 @@
-description "xdebug-netbeans-bridge"
-author "--- <a@b.com>"
+description "xdebug-nb-bridge"
+author "5fec8fdadc460cb8540a901f08ef288b"
  
 # When to start the service
 start on runlevel [2345]
@@ -11,14 +11,20 @@ stop on runlevel [016]
 respawn
  
 # Essentially lets upstart know the process will detach itself to the background
-# expect fork
+expect fork
  
 # Run before process
 pre-start script
+
+LOGFILE='/var/log/xdebug-nb-bridge.log'
+TIME=$(date &)
+echo $TIME 'Starting xdebug-nb-bridge...' >> $LOGFILE
 
 end script
  
 # Start the process
 script
-su -c "/usr/bin/php -S localhost:9004 /usr/bin/local/xdebug-netbeans-bridge/xdebug-netbeans-bridge.php"
+
+php -S localhost:9004 /usr/local/bin/xdebug-nb-bridge/xdebug-nb-bridge.php &
+
 end script

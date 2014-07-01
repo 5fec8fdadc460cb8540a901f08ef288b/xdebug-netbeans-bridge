@@ -20,19 +20,19 @@ if [ -z "$SCRIPT_DIR" ] ; then
 fi
 
 # make scripts executable
-chmod +x $SCRIPT_DIR'/xdebug-netbeans-bridge.php'
+chmod +x $SCRIPT_DIR'/xdebug-nb-bridge.php'
 
 # install scripts
-rm -rf /usr/local/bin/xdebug-netbeans-bridge
-mkdir /usr/local/bin/xdebug-netbeans-bridge
-cp $SCRIPT_DIR'/xdebug-netbeans-bridge.php' /usr/local/bin/xdebug-netbeans-bridge
+rm -rf /usr/local/bin/xdebug-nb-bridge
+mkdir /usr/local/bin/xdebug-nb-bridge
+cp $SCRIPT_DIR'/xdebug-nb-bridge.php' /usr/local/bin/xdebug-nb-bridge
 
 # install log
-touch /var/log/xdebug-netbeans-bridge.log
-chmod 777 /var/log/xdebug-netbeans-bridge.log
+touch /var/log/xdebug-nb-bridge.log
+chmod 777 /var/log/xdebug-nb-bridge.log
 
 # install upstart script
-cp $SCRIPT_DIR'/xdebug-netbeans-bridge' /etc/init/xdebug-netbeans-bridge.conf
-chmod +x /etc/init/xdebug-netbeans-bridge.conf
+cp $SCRIPT_DIR'/xdebug-nb-bridge' /etc/init/xdebug-nb-bridge.conf
+chmod +x /etc/init/xdebug-nb-bridge.conf
 
 echo $GREEN "OK" $NC "Install successful."
