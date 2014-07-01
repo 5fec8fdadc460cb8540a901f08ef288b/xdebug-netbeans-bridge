@@ -23,3 +23,9 @@ sudo sh install.sh
 ```
 xdebug.file_link_format = "http://localhost:9004/nb-protocol-server.php?file=%f&line=%l"
 ```
+
+## Uninstalling: 
+
+```
+sudo sh uninstall.sh
+```
