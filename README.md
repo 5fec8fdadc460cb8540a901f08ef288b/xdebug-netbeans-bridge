@@ -10,6 +10,7 @@ out of Firefox. There you can setup custom protocol handlers in about:config.
 
 Tested with Ubuntu 14.04
 
+
 ## Start \ Stop
 
 - Not necessary to start script after installed. Runs at startup.
@@ -20,6 +21,13 @@ service xdebug-nb-bridge stop
 ```
 
 ## Installing: 
+
+- Dependencies 
+
+Linux
+Upstart
+Netbeans
+php > 5.4
 
 ```
 sudo sh install.sh
