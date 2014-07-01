@@ -23,11 +23,10 @@ service xdebug-nb-bridge stop
 ## Installing: 
 
 - Dependencies 
-
-Linux
-Upstart
-Netbeans
-php > 5.4
+    Linux
+    Upstart
+    Netbeans
+    php > 5.4
 
 ```
 sudo sh install.sh
