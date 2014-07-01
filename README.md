@@ -10,9 +10,9 @@ out of Firefox. There you can setup custom protocol handlers in about:config.
 
 ## Installing: 
 
-\code
+```
 sudo sh install.sh
-\endcode
+```
 
 ## Configuring: 
 
@@ -20,6 +20,6 @@ sudo sh install.sh
 
 - Format Xdebug backtrace links in all relevant php.ini files to redirect to this service (which runs on port 9004): 
 
-\code
+```
 xdebug.file_link_format = "http://localhost:9004/nb-protocol-server.php?file=%f&line=%l"
-\endcode
+```
