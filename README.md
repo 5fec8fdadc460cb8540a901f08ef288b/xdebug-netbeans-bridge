@@ -28,6 +28,8 @@ service xdebug-nb-bridge stop
     - Netbeans
     - php > 5.4
 
+- Code
+    - From source directory run:
 ```
 sudo sh install.sh
 ```
