@@ -2,7 +2,7 @@ xdebug-netbeans-bridge
 ======================
 
 A service that allows xdebug backtrace links to trigger navigation events in Netbeans. 
-This works for PHP stack trace link navigation in Chrome and other browsers which do not support custom protocol handlers. 
+This works for PHP stack trace link navigation in Chrome and other browsers which do not support custom protocol handlers. Runs on port 9004 by default.
 
 Firefox does, and you don't need this script if you don't mind working
 out of Firefox. There you can setup custom protocol handlers in about:config. 
